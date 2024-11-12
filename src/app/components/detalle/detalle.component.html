@@ -1,0 +1,13 @@
+<div class="p-5" style="text-align: center;">
+    <h1>Detalles</h1>
+    @if(empleado){
+    <ul>
+        <li>{{empleado.idEmpleado}}</li>
+        <li>{{empleado.apellido}}</li>
+        <li>{{empleado.oficio}}</li>
+        <li>{{empleado.salario}}</li>
+    </ul>
+    }
+    <br>
+    <a [routerLink]="['/home']">Home</a>
+</div>

@@ -1,0 +1,28 @@
+<div class="p-5" style="text-align: center;">
+    <h1 class="p-5" >Empleados</h1>
+    <table class="table table-bordered table-success">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Apellido</th>
+                <th>Oficio</th>
+                <th>Salario</th>
+                <th>Detalle</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for(emp of empleados;track emp){
+                <tr>
+                    <td>{{emp.idEmpleado}}</td>
+                    <td>{{emp.apellido}}</td>
+                    <td>{{emp.oficio}}</td>
+                    <td>{{emp.salario}}</td>
+                    <td>
+                        <a [routerLink]="['/detalle' ,emp.idEmpleado]" routerLinkActive="router-link-active"  class="btn btn-sm btn-primary">Detalle</a>
+                    </td>
+                </tr>
+            }
+          
+        </tbody>
+    </table>
+</div>

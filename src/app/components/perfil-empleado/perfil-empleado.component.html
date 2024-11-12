@@ -1,0 +1,27 @@
+<div class="p-5" style="text-align: center;">
+    <h1>Perfil Empleado</h1>
+    <table class="table table-bordered table-success">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Apellido</th>
+                <th>Oficio</th>
+                <th>Salario</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if(empleado){
+
+           
+                <tr>
+                    <td>{{empleado.idEmpleado}}</td>
+                    <td>{{empleado.apellido}}</td>
+                    <td>{{empleado.oficio}}</td>
+                    <td>{{empleado.salario}}</td>
+                
+                </tr>
+            }
+          
+        </tbody>
+    </table>
+</div>
